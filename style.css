@@ -13,6 +13,7 @@ body{
     width: 50%;
     height: 10vh;
     text-align: center;
+    text-shadow: 2px 2px 5px red;
     margin: 0 auto;
     font-weight: 600;
     font-family: "Cedarville Cursive", cursive;
@@ -21,6 +22,10 @@ body{
 .sub {
     display: block;
     text-align: right;
+}
+
+.t1, .t2, .t3 {
+    clear: both;
 }
 
 /* img {
