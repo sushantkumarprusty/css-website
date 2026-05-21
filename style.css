@@ -19,7 +19,7 @@ body{
     font-family: "Cedarville Cursive", cursive;
 }
 
-.sub {
+.sub{
     display: block;
     text-align: right;
 }
@@ -57,11 +57,11 @@ body{
     font-weight: 600;
     font-family: "Cedarville Cursive", cursive;
  }
- #para1{
-    /* text-align: justify;
+ /* #para1{
+    text-align: justify;
     text-justify: inter-word;
     text-indent: 50px;
     letter-spacing: 2px;
     word-spacing: 10px;
-    line-height: 24px;     */
- }
+    line-height: 24px;    
+ } */
