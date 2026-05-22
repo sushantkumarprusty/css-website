@@ -24,7 +24,11 @@ body{
     text-align: right;
 }
 
-.t1, .t2, .t3 {
+.t {
+    clear: both;
+}
+
+hr {
     clear: both;
 }
 
@@ -51,10 +55,11 @@ body{
  .heading{
     /* text-align: center;
     text-decoration: line-through dotted;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px red; */
+    text-transform: uppercase; */
+    text-shadow: 2px 2px 5px rgb(199, 228, 8);
     font-size: 30px;
     font-weight: 600;
+    
     font-family: "Cedarville Cursive", cursive;
  }
  /* #para1{
