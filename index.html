@@ -15,6 +15,9 @@
             <p class="site-tagline">Breaking tech news, smart analysis, and future-ready insights—delivered fast.</p>
         </div>
     </header>
+    <div class="Email">
+        Email Me
+    </div>
     <nav class="site-nav">
         <ul>
             <li><a href="#">Home</a></li>
@@ -25,6 +28,47 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+    <hr>
+    <div>
+        <h1 class="t">SpaceX’s Upgraded Starship V3 Launches but Exposes Engine and Booster Shortfalls</h1>
+        
+        <img src="SX.png" alt="logo" style="float: left; margin-right: 20px; width: 250px; height: auto;">
+
+        <p class="p"> SpaceX launched the first flight of its third‑generation Starship V3 from Starbase Pad 2 on May 22, 2026, debuting redesigned Raptor 3 engines and new pad hardware. The upper stage deployed 20 mock Starlink satellites and two camera-equipped craft that returned heat‑shield imagery, completed reentry maneuvers, and splashed down in the Indian Ocean. A Raptor on the upper stage shut down during ascent and one Super Heavy booster engine and boost‑back burns failed, sending the booster into the Gulf of Mexico. SpaceX and analysts said payload and heat‑shield goals were met, but engine reliability and precision recovery need more flights. The test comes as SpaceX files for an IPO and seeks NASA confidence for Artemis lunar missions</p>
+    </div>
+    <hr>
+    <div>
+        <h1 class="t">Anthropic’s Claude Mythos Finds Over 10,000 High‑Severity Flaws, Exposes Patch Backlog</h1>
+        
+        <img src="claud-mythos.png" alt="logo" style="float: left; margin-right: 20px; width: 250px; height: auto;">
+
+        <p class="p"> Anthropic said Project Glasswing partners using the Claude Mythos Preview uncovered over 10,000 high‑ or critical‑severity software vulnerabilities in about a month. Independent reviewers sampled 1,752 candidates and judged ~90.6% valid, confirming 1,094 as high‑ or critical‑severity, showing a high true‑positive rate. Despite validated bugs, fewer than 100 confirmed patches had been deployed, straining vendors and open‑source maintainers. Mythos has produced verifiable fixes and CVEs for some issues (notably wolfSSL’s CVE‑2026‑5194, OpenBSD, and FFmpeg), and helped stop a $1.5M fraudulent wire. Anthropic limits access, pledges up to $100M in compute credits/grants, and negotiates controlled expansion amid regulatory pressure.</p>
+    </div>
+    <hr>
+    <div>
+        <h1 class="t">Huawei Unveils High-Capacity SSDs Using Die-on-Board Packaging</h1>
+        
+        <img src="hwe-ssd.png" alt="logo" style="float: left; margin-right: 20px; width: 250px; height: auto;">
+
+        <p class="p"> Huawei presented the drives at its ID Forum held May 21–23, showing 61.44TB and 122.88TB enterprise SSDs and saying a 245TB variant is in development.
+ The drives use Die-on-Board (DoB) packaging, which mounts raw NAND dies directly on the SSD printed circuit board instead of using traditional packaged chips.
+ Huawei says DoB yields about a 33% capacity-density gain and that it has solved key thermal and signal-integrity challenges on products such as the OceanDisk 1800.E.
+ The new SSDs use YMTC’s Xtacking 4.0 NAND, which is currently limited to roughly 232 layers, so Huawei’s approach increases usable capacity without access to higher-layer 3D NAND from foreign suppliers.
+ Company claims about performance, density and system integration for AI inference and large data arrays are self-reported and not independently verified, and the move highlights how Chinese firms are engineering around export limits with possible effects on data-center design and the semiconductor supply chain.</p>
+    </div>
+    <hr>
+    <div>
+        <h1 class="t">NASA Just Released One of the Most Detailed Maps of the Night Sky Ever</h1>
+        
+        <img src="Nasa-sky.png" alt="logo" style="float: left; margin-right: 20px; width: 250px; height: auto;">
+
+        <p class="p"> The skies at night have received their most complete representation ever through the eyes of NASA's Transiting Exoplanet Survey Satellite (TESS). This amazing image is a compilation of images taken over eight years of continuous observation. The representation includes 96 sectors taken from April 2018 through September 2025, where there are over 6,000 colourful dots indicating the presence of either known or potential planets revolving around different stars.</p>
+    </div>
+    <hr>
+    <div class="more-button-container">
+        <button class="more-btn" onclick="toggleMore()">More ▼</button>
+    </div>
+    <div class="hidden-content" id="hiddenContent">
     <hr>
     <div>
         <h1 class="t">Airtel’s Priority Postpaid Service Reportedly Faces Regulatory Scrutiny Over Net Neutrality Concerns</h1>
@@ -187,5 +231,20 @@
  High‑profile leaks from Ice Universe and others claim the Galaxy Z Fold 8 series may drop Privacy Display and S Pen support and show only modest crease improvements, a developing set of assertions that other specification leaks partly contradict.
  Samsung is adjusting pricing now, with confirmed discounts for S25 and S26 flagships during its AI Week sale, a short‑term market move tied to component cost pressures and inventory management that could influence launch strategies.
     </div>
+    </div>
 </body>
 </html>
+<script>
+function toggleMore() {
+  const hiddenContent = document.getElementById('hiddenContent');
+  const btn = document.querySelector('.more-btn');
+  
+  if (hiddenContent.style.display === 'none' || hiddenContent.style.display === '') {
+    hiddenContent.style.display = 'block';
+    btn.textContent = 'Less ▲';
+  } else {
+    hiddenContent.style.display = 'none';
+    btn.textContent = 'More ▼';
+  }
+}
+</script>
