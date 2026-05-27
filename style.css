@@ -253,12 +253,15 @@ body{
 }
 
 .site-nav {
+    position: relative;
+    z-index: 1001;
+    overflow: visible;
     padding: 0 24px 16px;
     background-color: #1a0f56;
     text-align: center;
 }
 
-.site-nav ul {
+.site-nav > ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -268,18 +271,67 @@ body{
     justify-content: center;
 }
 
-.site-nav li {
+.site-nav > ul > li {
     margin: 0;
+    position: relative;
 }
 
 .site-nav a {
+    display: block;
     color: #f7f7ff;
     text-decoration: none;
     font-weight: 600;
+    padding: 10px 0;
 }
 
 .site-nav a:hover {
     text-decoration: underline;
+}
+
+.nav-dropdown {
+    padding: 0 0 10px;
+}
+
+.site-nav .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 1002;
+    min-width: 160px;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    background-color: #1a0f56;
+    border: 1px solid rgba(247, 247, 255, 0.25);
+    border-radius: 8px;
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%);
+}
+
+.site-nav .dropdown-menu li {
+    width: 100%;
+    margin: 0;
+}
+
+.site-nav .dropdown-menu a {
+    padding: 10px 12px;
+    border-radius: 6px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.site-nav .dropdown-menu a:hover,
+.site-nav .dropdown-menu a:focus {
+    background-color: #2d1b7f;
+    text-decoration: none;
+}
+
+.site-nav .nav-dropdown:hover .dropdown-menu,
+.site-nav .nav-dropdown:focus-within .dropdown-menu {
+    display: flex;
 }
 
 .heading{
