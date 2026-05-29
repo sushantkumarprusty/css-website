@@ -355,6 +355,25 @@ body{
     animation: crystalTitle 5s ease-in-out infinite alternate;
 }
 
+/* Styles for dynamically fetched article titles */
+.article-title-link a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent .t class or define a new one */
+}
+
+.article-title-link a:hover {
+    text-decoration: underline;
+    color: #2d1b7f; /* A slightly darker shade for hover */
+}
+
+.article-box {
+    background-color: #e8f5e9;
+    border: 3px solid #2e7d32;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 @keyframes liquidCrystalFlow {
     from {
         transform: translate3d(-4%, -3%, 0) rotate(0deg) skewX(-5deg) scale(1);
