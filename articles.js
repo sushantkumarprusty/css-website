@@ -18,6 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fixed Data Alignment: Headlines now match their corresponding URLs.
     const defenceArticles = [
         {
+            url: "https://bharatshakti.in/vietnam-to-become-second-asean-country-to-obtain-brahmos-missile-system/",
+            headline: "Vietnam to become second ASEAN country to obtain BrahMos missile system",
+            description: "Vietnam is set to become the second ASEAN country to acquire the BrahMos missile system, a significant development in the region's defense capabilities."
+        },
+        {
             url: "https://www.indiandefensenews.in/2026/05/taliban-signs-first-defence-pact-with.html",
             headline: "Taliban signs first defence pact with Russia, raising concerns over regional security dynamics",
             description: "The Taliban has signed its first defence pact with Russia, marking a significant development in the geopolitical landscape of the region. The agreement is expected to enhance military cooperation between the two parties, but it has also raised concerns among neighboring countries and international observers about the potential implications for regional security."
